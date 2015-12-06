@@ -1,0 +1,1 @@
+mongoimport --db uber --collection food --drop --file food.json
