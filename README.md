@@ -1,5 +1,5 @@
 #Uber Coding challenge
-I chose to implement the food trucks service that tells the user what types of food trucks might be found near a specific location on a map. As a fresh graduate out of UCSD, all my industry experience comes from solely from my internships. Additionally, this is my finals week and I have two finals tomorrow. Hence, I couldn’t devote a lot of time to this coding challenge.  Please do take these two things into consideration while evaluating my code.
+I chose to implement the back-end track for food trucks service that tells the user what types of food trucks might be found near a specific location on a map. As a fresh graduate out of UCSD, all my industry experience comes solely from my internships. Additionally, this is my finals week and I have two finals tomorrow. Hence, I couldn’t devote a lot of time to this coding challenge.  Please do take these two things into consideration while evaluating my code.
 
 So here’s all you need to know about this service!
 
