@@ -26,13 +26,15 @@ To run the service you need the following installed on your system:
 This is the order of scripts to be executed(assuming all the the files were downloaded correctly from this directory) :
 1.Create an instance of mongoDB (command- mongod)
 
-2.Run the server code: python main_server.py
+2.Run import.sh to insert the food.json file on to the database.
 
-3.Hit it with your search query as per the format specified in API docs.
+3.Run the server code: python main_server.py
 
-4.View the results!
+4.Hit it with your search query as per the format specified in API docs.
 
-5.Run the test.py script to test the code.
+5.View the results!
+
+6.Run the test.py script to test the code.
 
 
 Here is what each script does:
