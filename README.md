@@ -25,10 +25,15 @@ To run the service you need the following installed on your system:
 
 This is the order of scripts to be executed(assuming all the the files were downloaded correctly from this directory) :
 1.Create an instance of mongoDB (command- mongod)
+
 2.Run the server code: python main_server.py
+
 3.Hit it with your search query as per the format specified in API docs.
+
 4.View the results!
+
 5.Run the test.py script to test the code.
+
 
 Here is what each script does:
 food.csv- The given data was extracted from the website as a csv file. 
