@@ -2,6 +2,7 @@ I chose to implement the food trucks service that tells the user what types of f
 
 So here’s all you need to know about this service!
 
+
 I have used Python for my backend. It is a REST API which uses Flask to route requests. For my database I have used MongoDB. Since we have geo-spatial data and we have many complicated queries in the future, I chose MongoDB since it can provide efficient processing of such data. During my research, I also discovered that Uber uses MongoDB as well. So win-win!
 
 MongoDB can be initialized with json data. However, to exploit MongoDB’s geo spatial methods, the data needs to be formatted to include a location parameter in a particular format:
@@ -14,6 +15,20 @@ Example:
 
 For our needs, we just need ‘point’. But this can be easily extended to other geometries if needed in the future. For getting data in this format, I downloaded the data on the website as a csv file and converted it into JSON which includes the above field.
 
+To run the service you need the following installed on your system:
+
+1.PyMongo
+2.MongoDB
+3.flask
+
+This is the order of scripts to be executed(assuming all the the files were downloaded correctly from this directory) :
+1.Create an instance of mongoDB (command- mongod)
+2.Run the server code: python main_server.py
+3.Hit it with your search query as per the format specified in API docs.
+4.View the results!
+5.Run the test.py script to test the code.
+
+Here is what each script does:
 food.csv- The given data was extracted from the website as a csv file. 
 
 csv_to_json.py- Converts the csv files into a json file. The json file available on the SF data website contained a lot of unnecessary meta data. Hence, I implemented this code to clean and preprocess the data.
