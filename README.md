@@ -19,9 +19,7 @@ For our needs, we just need ‘point’. But this can be easily extended to othe
 To run the service you need the following installed on your system:
 
 1. PyMongo
-
 2. MongoDB
-
 3. flask
 
 This is the order of scripts to be executed(assuming all the the files were downloaded correctly from this directory) :
@@ -38,21 +36,21 @@ Here is what each script does:
 
 * _csv_to_json.py_ - Converts the csv files into a json file. The json file available on the SF data website contained a lot of unnecessary meta data. Hence, I implemented this code to clean and preprocess the data.
 
-food.json- Contains the data in form of a json file
+* _food.json_ - Contains the data in form of a json file.
 
-import.sh- Uploading the food.json file onto the database. I’ve used MongoDB. Database is named “Uber” and collection is named “food”
+* _import.sh_ - Uploading the food.json file onto the database. I’ve used MongoDB. Database is named “Uber” and collection is named “food”
 
-main_server.py- This is the main code to be deployed on the server. It contains the search method with all the functionalities as described in API docs.
+* _main_server.py_ - This is the main code to be deployed on the server. It contains the search method with all the functionalities as described in API docs.
 
-Things to note:
+Things to note about main_server.py :
 
-1.Code has been designed with extensibility in mind. Parameters like sort,radius_limit, limit have been initialised to default values. However, they can be easily extended in the future to fine tune the search truck results.
+1. Code has been designed with extensibility in mind. Parameters like sort,radius_limit, limit have been initialised to default values. However, they can be easily extended in the future to fine tune the search truck results.
 
-2.Error checking has been implemented for numerous scenarios that may not necessarily be encountered with the given database.
+2. Error checking has been implemented for numerous scenarios that may not necessarily be encountered with the given database.
 
-3.The data had multiple entries for the same location with different licence status. Since, the problem statement expected food trucks near a given location, duplicate entries have been omitted.
+3. The data had multiple entries for the same location with different licence status. Since, the problem statement expected food trucks near a given location, duplicate entries have been omitted.
 
-test.py- Various test cases for the search api.
+* _test.py_ - Various test cases for the search api.
 
 
 With my limited experience and the given amount of time, this was all I could do. Hope it suffices!
