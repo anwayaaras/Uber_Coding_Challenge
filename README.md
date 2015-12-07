@@ -7,21 +7,21 @@ I have used Python for my backend. It is a REST API which uses Flask to route re
 
 MongoDB can be initialized with json data. However, to exploit MongoDB’s geo spatial methods, the data needs to be formatted to include a location parameter in a particular format:
 Example:
-
+```
 “loc": {
     "type": "Point", 
     "coordinates": [-122.377797368962, 37.7438311721327]
     }
-
+```
 For our needs, we just need ‘point’. But this can be easily extended to other geometries if needed in the future. For getting data in this format, I downloaded the data on the website as a csv file and converted it into JSON which includes the above field.
 
 To run the service you need the following installed on your system:
 
-*PyMongo
+1. PyMongo
 
-*MongoDB
+2. MongoDB
 
-*flask
+3. flask
 
 This is the order of scripts to be executed(assuming all the the files were downloaded correctly from this directory) :
 *Create an instance of mongoDB (command- mongod)
