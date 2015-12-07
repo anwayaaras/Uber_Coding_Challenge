@@ -18,7 +18,9 @@ For our needs, we just need ‘point’. But this can be easily extended to othe
 To run the service you need the following installed on your system:
 
 1.PyMongo
+
 2.MongoDB
+
 3.flask
 
 This is the order of scripts to be executed(assuming all the the files were downloaded correctly from this directory) :
