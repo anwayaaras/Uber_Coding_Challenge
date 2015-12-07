@@ -15,6 +15,7 @@ Example:
 ```
 For our needs, we just need ‘point’. But this can be easily extended to other geometries if needed in the future. For getting data in this format, I downloaded the data on the website as a csv file and converted it into JSON which includes the above field.
 
+### Instructions to run this code
 To run the service you need the following installed on your system:
 
 1. PyMongo
@@ -24,18 +25,18 @@ To run the service you need the following installed on your system:
 3. flask
 
 This is the order of scripts to be executed(assuming all the the files were downloaded correctly from this directory) :
-*Create an instance of mongoDB (command- mongod)
-*Run import.sh to insert the food.json file on to the database.
-*Run the server code: python main_server.py
-*Hit it with your search query as per the format specified in API docs.
-*View the results!
-*Run the test.py script to test the code.
+1. Create an instance of mongoDB (command- mongod)
+2. Run import.sh to insert the food.json file on to the database.
+3. Run the server code: python main_server.py
+4. Hit it with your search query as per the format specified in API docs.
+5. View the results!
+6. Run the test.py script to test the code.
 
 
 Here is what each script does:
-food.csv- The given data was extracted from the website as a csv file. 
+* _food.csv_ - The given data was extracted from the website as a csv file. 
 
-csv_to_json.py- Converts the csv files into a json file. The json file available on the SF data website contained a lot of unnecessary meta data. Hence, I implemented this code to clean and preprocess the data.
+* _csv_to_json.py_ - Converts the csv files into a json file. The json file available on the SF data website contained a lot of unnecessary meta data. Hence, I implemented this code to clean and preprocess the data.
 
 food.json- Contains the data in form of a json file
 
