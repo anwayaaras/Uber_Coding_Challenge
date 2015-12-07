@@ -41,11 +41,12 @@ Here is what each script does:
 * _import.sh_ - Uploading the food.json file onto the database. I’ve used MongoDB. Database is named “Uber” and collection is named “food”
 
 * _main_server.py_ - This is the main code to be deployed on the server. It contains the search method with all the functionalities as described in API docs. Things to note about main_server.py :
-1. Code has been designed with extensibility in mind. Parameters like sort,radius_limit, limit have been initialised to default values. However, they can be easily extended in the future to fine tune the search truck results.
 
-2. Error checking has been implemented for numerous scenarios that may not necessarily be encountered with the given database.
+    1. Code has been designed with extensibility in mind. Parameters like sort,radius_limit, limit have been initialised to default values. However, they can be easily extended in the future to fine tune the search truck results.
 
-3. The data had multiple entries for the same location with different licence status. Since, the problem statement expected food trucks near a given location, duplicate entries have been omitted.
+    2. Error checking has been implemented for numerous scenarios that may not necessarily be encountered with the given database.
+
+    3. The data had multiple entries for the same location with different licence status. Since, the problem statement expected food trucks near a given location, duplicate entries have been omitted.
 
 * _test.py_ - Various test cases for the search api.
 
