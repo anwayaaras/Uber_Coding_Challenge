@@ -3,39 +3,33 @@ I chose to implement the food trucks service that tells the user what types of f
 
 So here’s all you need to know about this service!
 
-
 I have used Python for my backend. It is a REST API which uses Flask to route requests. For my database I have used MongoDB. Since we have geo-spatial data and we have many complicated queries in the future, I chose MongoDB since it can provide efficient processing of such data. During my research, I also discovered that Uber uses MongoDB as well. So win-win!
 
 MongoDB can be initialized with json data. However, to exploit MongoDB’s geo spatial methods, the data needs to be formatted to include a location parameter in a particular format:
 Example:
 
 “loc": {
-"type": "Point", 
-"coordinates": [-122.377797368962, 37.7438311721327]
-}
+    "type": "Point", 
+    "coordinates": [-122.377797368962, 37.7438311721327]
+    }
 
 For our needs, we just need ‘point’. But this can be easily extended to other geometries if needed in the future. For getting data in this format, I downloaded the data on the website as a csv file and converted it into JSON which includes the above field.
 
 To run the service you need the following installed on your system:
 
-1.PyMongo
+*PyMongo
 
-2.MongoDB
+*MongoDB
 
-3.flask
+*flask
 
 This is the order of scripts to be executed(assuming all the the files were downloaded correctly from this directory) :
-1.Create an instance of mongoDB (command- mongod)
-
-2.Run import.sh to insert the food.json file on to the database.
-
-3.Run the server code: python main_server.py
-
-4.Hit it with your search query as per the format specified in API docs.
-
-5.View the results!
-
-6.Run the test.py script to test the code.
+*Create an instance of mongoDB (command- mongod)
+*Run import.sh to insert the food.json file on to the database.
+*Run the server code: python main_server.py
+*Hit it with your search query as per the format specified in API docs.
+*View the results!
+*Run the test.py script to test the code.
 
 
 Here is what each script does:
